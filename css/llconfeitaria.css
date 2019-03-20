@@ -1,0 +1,523 @@
+@font-face {
+    font-family: 'BernardoModa';
+    src: url("../fonts/Bernardo-Moda/Bernardo-Moda-Bold.ttf");
+    font-size: 1em;
+}
+@font-face {
+	font-family: 'CommercialScript';
+	src: url("../fonts/CommercialScript/CommercialScript-BT.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'MyriadArabic';
+	src: url("../fonts/MyriadArabic/MyriadArabic-Regular.otf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'AdobeDevanagari';
+	src: url("../fonts/AdobeDevanagari/AdobeDevanagari-Regular.otf");
+	font-size: 1em;
+}
+.novisible-dt {
+    display: none!important;
+}
+/****************INICIO CABEÇALHO*****************/
+header {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    background-color: #fff;
+    z-index: 5;
+}
+header #cabeca {
+    height: 150px;
+}
+header #menu .col-md-4 {
+    padding: 0;
+}
+header #menu ul {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 75px;
+    list-style: none;
+}
+header #menu #esq {
+    float: left;
+    left: 115px;
+}
+
+
+header #menu #dir {
+    float: right;
+    right: 90px;
+}
+header #menu ul li {
+    margin-left: 30px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: #4A1818;
+}
+header #menu ul li a {
+    text-decoration: none;
+    font-family: 'BernardoModa' , sans-serif;
+    font-size: 22px;
+    color: #BE9038;
+}
+header #logotipo {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 104px);
+    z-index: 5;
+}
+header #busca {
+    position: relative;
+    top: 2px;
+    margin: 0
+}
+#btn-busca {
+    color: #4A1818;
+    font-size: 22px;
+    z-index: 2;
+    transition: 1s;
+}
+#areabusca {
+    position: relative;
+    top: 540px;
+    right: 80px;
+    z-index: 1;
+    display: none;
+	transition-duration: 1s;
+ 
+}
+#areabusca.ativo {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+    display: block;
+}
+#ln1 {
+    position: relative;
+    top: 113px;
+}
+hr {
+    border: 0.5px solid rgba(174,122,29,.6);
+}
+/****************FIM CABEÇALHO*****************/
+/****************INICIO SESSAO*****************/
+/*BANNER*/
+section {
+    position: relative;
+    top: 150px;
+    padding: 0;
+}
+section.container {
+    padding: 0;
+}
+
+.owl-carousel {
+    position: fixed;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.owl-carousel img {
+    margin: 0;
+}
+.banner {
+    padding: 0;
+    margin: 0;
+}
+.owl-nav , .owl-dots {
+    display: none;
+}
+#banner2 {
+    position: fixed;
+    width: 100%;
+    height: 642px; 
+    background-image: url(../img/jon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#banner2 .container {
+    padding: 0;
+}
+#banner3 {
+    position: fixed;
+    width: 100%;
+    height: 642px; 
+    background-image: url(../img/lays.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#banner3 .container {
+    padding: 0;
+}
+#bolha {
+    position: relative;
+    background-image: url(../img/bolha.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 550px;
+    height: 209px;
+    top: 240px;
+}
+#bolha h1 {
+    position: relative;
+    font-family: 'CommercialScript';
+    font-size: 50px;
+    color: #4A1818;
+    text-align: center;
+    width: 293px;
+    top: 40px;
+    margin: 0 auto;
+}
+#bolha h1 small {
+    font-family: 'BernardoModa';
+    font-size: 20px;
+    display: block;
+}
+#ln2 {
+    position: relative;
+    width: 97%;
+    top: 303px;
+    z-index: 1;
+}
+/*FIM BANNER*/
+/*PARTE 1 - ESPECIALIDADES*/
+#iparte1 {
+    position: relative;
+    height: 658px;
+    top: 280px;
+    padding: 0;
+    background-color: #fff;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    margin: 0;
+}
+.folha-dec {
+    position: relative;
+    background-image: url(../img/folha-dec.png);
+    background-repeat: no-repeat;
+    width: 102px;
+    height: 24px;
+    
+}
+#iparte1 .folha-dec {
+    top: 30px;
+}
+h2 {
+    position: relative;
+    font-family: 'MyriadArabic';
+    font-size: 50px;
+    text-align: center;
+    color: rgba(74,24,24,.9);
+}
+#iparte1 h2 {
+    top: 40px;
+}
+.espb {
+    margin: 0;
+}
+.esp1 , .esp2 , .esp3 {
+    position: relative;
+    top: 110px;
+    padding: 0;
+    display: block;
+
+}
+section .caixap {
+    position: relative;
+    width: 340px;
+    height: 118px;
+    border-radius: 20px;
+    background-color: #F1EBE8;
+    margin: 0 auto;
+}
+section .caixap h3 {
+    font-family: 'MyriadArabic';
+    font-size: 32px;
+    text-align: center;
+    color: #4A1818;
+}
+h3 {
+    font-family: 'MyriadArabic';
+    text-align: center;
+    color: #4A1818;
+}
+section .caixap h3 span {
+	font-family: 'AdobeDevanagari';
+    font-size: 15px;
+    text-align: center;
+    width: 278px;
+    color: #4A1818;
+    margin: 0 auto;
+    display: block;
+}
+#bolo1 , #bolo2 , #bolo3 {
+    position: relative;
+    background-image: url(../img/boloteste1.png);
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 280px;
+}
+.bolo {
+    top:-40px;
+}
+#ln3 {
+    position: relative;
+    width: 97%;
+    top: 145px;
+    z-index: 1;
+}
+/*FIM PARTE 1 - ESPECIALIDADES*/
+/*PARTE 2 - SOBRE NÓS*/
+#ln4 {
+    position: relative;
+    width: 97%;
+    top: -10px;
+    z-index: 1;
+}
+#iparte2 {
+    position: relative;
+    height: 620px;
+    top: 350px;
+    padding: 0;
+    background-color: #fff;
+    /*background-color: rgba(255, 255, 255, 0.9);*/
+    margin: 0;
+}
+#llfoto {
+    position: relative;
+    background-image: url(../img/lays.png);
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 590px;
+    top: -18px;
+}
+#sbnos {
+    margin: auto;
+}
+#sbnos h3 {
+    font-size: 40px;
+}
+p {
+    font-family: 'AdobeDevanagari';
+    text-align: center;
+    color: #4A1818;
+}
+#ln5 {
+    position: relative;
+    width: 97%;
+    top: -27px;
+    z-index: 1;
+}
+/*FIM PARTE 2 - SOBRE NÓS*/
+/*PARTE 3 - DEPOIMENTOS*/
+#iparte3 {
+    position: relative;
+    height: 625px;
+    top: 420px;
+    background-color: #fff;
+}
+#ln6 {
+    position: relative;
+    width: 97%;
+    top: 8px;
+    z-index: 1;
+}
+#iparte3 .folha-dec {
+    top: 30px;
+}
+#iparte3 h2 {
+    top: 40px;
+}
+
+#depoimentos {
+    margin: 0;
+}
+#depoimentos .dep-show {
+    padding: 50px 0 0 100px;
+}
+#foto-dep1 {
+    position: relative;
+    background-image: url(../img/depoim.png);
+    background-repeat: no-repeat;
+    width: 179px;
+    height: 179px;
+}
+#foto-dep2 {
+    position: relative;
+    background-image: url(../img/depoim.png);
+    background-repeat: no-repeat;
+    width: 179px;
+    height: 179px;
+}
+.text-dep {
+    width: 260px;
+    margin: auto;
+}
+h4 {
+    font-family: 'BernardoModa';
+    font-size: 40px;
+    color: #4A1818;
+}
+h4 span {
+    font-family: 'AdobeDevanagari';
+    font-size: 15px;
+    margin-top: 20px;
+    display: block;
+
+}
+#form-dep {
+    width: 355px;
+    height: 340px;
+    margin: 50px auto;
+}
+#caixa-dep {
+    margin: 80px auto;
+}
+#caixa-dep h3 {
+    font-size: 30px;
+}
+#btn-dep {
+    padding: 5px 12px;
+    border-radius: 8px;
+    background-color: #4A1818;
+    color: #BE9038;
+}
+#btn-dep i {
+    margin-left: 10px;
+}
+#ln7 {
+    position: relative;
+    width: 97%;
+    top: 20px;
+    z-index: 1;
+}
+/*FIM PARTE 3 - DEPOIMENTOS*/
+/*PARTE 4 - FALE CONOSCO*/
+#iparte4 {
+    position: relative;
+    height: 583px;
+    top: 480px;
+    background-color: #fff;
+}
+#ln8 {
+    position: relative;
+    width: 97%;
+    top: 10px;
+    z-index: 1;
+}
+#iparte4 .folha-dec {
+    top: 30px;
+}
+#iparte4 h2 {
+    top: 40px;
+}
+#iparte4 .fale-con {
+    position: relative;
+    top: 65px;
+    margin: 0;
+}
+
+#map { 
+    padding: 0;
+    height: 376px;
+    margin: 0;
+    
+}
+#mapa {
+    width: 540px;
+    height: 376px;
+}
+#caixa-falecon {
+    padding: 50px 0;
+}
+#ln9 {
+    position: relative;
+    width: 97%;
+    top: 90px;
+    z-index: 1;
+    margin: 0 auto;
+}
+/*FIM   PARTE 4 - FALE CONOSCO*/
+/****************FIM SESSAO*****************/
+/****************INICIO RODAPE*****************/
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #F1EBE8;
+    top: 630px;
+
+}
+#ft-1 {
+    position: relative;
+    top: 85px;
+}
+.caixa {
+    position: relative;
+    width: 340px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.caixa h3 {
+    font-family: 'MyriadArabic';
+    font-size: 32px;
+    text-align: center;
+    color: #4A1818;
+}
+.caixa h3 span {
+	font-family: 'AdobeDevanagari';
+    font-size: 15px;
+    text-align: center;
+    width: 278px;
+    margin: 20px auto;
+    display: block;
+}
+.caixa p {
+    margin: 10px 40px;
+}
+.caixa p a {
+    color: #4A1818;
+}
+.caixa p i {
+    margin-right: 5px;
+    color: #4A1818;
+}
+.list-socials {
+    margin: 50px 87px;
+}
+.list-socials i {
+    font-size: 40px;
+    color: #4A1818;
+    margin: 0 10px;
+}
+#ft-2 {
+    position: relative;
+    top: 125px;
+    font-size: 15px;
+    display: block;
+}
+#copy {
+    float: left;
+    margin-left: 40px;
+}
+#dev {
+    float: right;
+    margin-right: 40px;
+}
+
+
+/****************FIM RODAPE*****************/
+
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
